@@ -7,6 +7,6 @@
     "nuxt"
   ],
   "repository": "https://github.com/thombruce/vue-timepiece",
-  "author": "Thom Bruce",
+  "author": "Thom Bruce <code@thombruce.com> (https://thombruce.com)",
   "license": "MIT"
 }

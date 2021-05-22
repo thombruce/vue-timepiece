@@ -1,5 +1,5 @@
 {
-  "name": "vue-timepiece",
+  "name": "@thombruce/vue-timepiece",
   "version": "0.1.0",
   "description": "Digital and analog clock component library for Vue.js",
   "files": [
@@ -8,6 +8,5 @@
   ],
   "repository": "https://github.com/thombruce/vue-timepiece",
   "author": "Thom Bruce",
-  "license": "MIT",
-  "private": false
+  "license": "MIT"
 }

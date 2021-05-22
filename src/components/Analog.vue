@@ -1,5 +1,5 @@
 <template lang='pug'>
-.timepiece.analog(:style='`width:${size};padding-bottom:${size};`')
+.timepiece.analog(:style='`width:${size};padding-bottom:${size};`' :class='background ? `clockface` : ``')
   .hours-container(:style="'-ms-transform:rotateZ(' + hoursAngle + 'deg);-webkit-transform:rotateZ(' + hoursAngle + 'deg);transform:rotateZ(' + hoursAngle + 'deg);'")
     .hours
   .minutes-container(:style="'-ms-transform:rotateZ(' + minutesAngle + 'deg);-webkit-transform:rotateZ(' + minutesAngle + 'deg);transform:rotateZ(' + minutesAngle + 'deg);'")
@@ -15,6 +15,10 @@ export default {
     size: {
       type: String,
       default: '10em'
+    },
+    background: {
+      type: Boolean,
+      default: true
     }
   },
 
@@ -52,12 +56,16 @@ export default {
   /*border-color:#222;*/
   border-radius: 50%;
   background-color: #eee;
-  background-size: 88%;
   position: relative;
   height:0;
   -ms-box-sizing:content-box;
   -webkit-box-sizing:content-box;
   box-sizing:content-box;
+}
+
+.timepiece.analog.clockface {
+  background: #eee url('../assets/clockface.svg') no-repeat center;
+  background-size: 88%;
 }
 
 .timepiece.analog:after {

@@ -1,6 +1,6 @@
 {
   "name": "@thombruce/vue-timepiece",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Digital and analog clock component library for Vue.js",
   "files": [
     "src",

@@ -33,8 +33,6 @@ This will make all of Vue Timepiece's components available globally, so that you
 
 ## Usage
 
-Pass your screenplay as a prop:
-
 ### Analog Clock
 
 ```vue
